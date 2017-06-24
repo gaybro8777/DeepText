@@ -47,7 +47,7 @@ If our codes are useful for your work, please cite our paper:
     make -j8 && make pycaffe
     ```
 
-4. Download DeepText text detection modelv from [one drive](https://onedrive.live.com/?id=root&cid=1A8DB798DCBE3032), and the populate it into directory `models`. The model's name should be `vgg16_DeepText_trained_model.caffemodel`.
+4. Download DeepText text detection model from [one drive](https://1drv.ms/u/s!AjIwvtyYt40aadToKyWv_-wv64M), and the populate it into directory `models`. The model's name should be `vgg16_DeepText_trained_model.caffemodel`.
 
 ### How to run the demo
 
