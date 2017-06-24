@@ -53,7 +53,7 @@ If our codes are useful for your work, please cite our paper:
 
 1. You can download ICDAR-2013 benchmark or any text images and then populate them into directory `demo_text_images`.
 
-2. Run `python tools/demo_DeepText.py' under GPU mode or `python tools/demo_DeepText.py --cpu` to run it under CPU mode.
+2. Run `python tools/demo_DeepText.py` under GPU mode or `python tools/demo_DeepText.py --cpu` to run it under CPU mode.
 
 ### Expected results
 
