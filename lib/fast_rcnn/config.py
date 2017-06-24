@@ -67,6 +67,11 @@ __C.TRAIN.BBOX_REG = True
 # be used as a bounding-box regression training example
 __C.TRAIN.BBOX_THRESH = 0.5
 
+# Ambiguous text cls embbeding
+__C.TRAIN.AMBIGUOUS_CLS = False
+# INTERATIVE_BOUNDING_BOX for training
+__C.TRAIN.INTERATIVE_BOUNDING_BOX = False
+
 # Iterations between snapshots
 __C.TRAIN.SNAPSHOT_ITERS = 10000
 
