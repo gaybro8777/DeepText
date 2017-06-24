@@ -47,11 +47,7 @@ If our codes are useful for your work, please cite our paper:
     make -j8 && make pycaffe
     ```
 
-4. Download PVANet detection model for VOC2007
-    ```Shell
-    cd $FRCN_ROOT
-    ./models/pvanet/download_voc2007.sh
-    ```
+4. Download DeepText text detection modelv from [one drive](https://onedrive.live.com/?id=root&cid=1A8DB798DCBE3032), and the populate it into directory `models`. The model's name should be `vgg16_DeepText_trained_model.caffemodel`.
 
 ### How to run the demo
 
