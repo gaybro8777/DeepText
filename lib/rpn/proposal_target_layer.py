@@ -64,7 +64,15 @@ class ProposalTargetLayer(caffe.Layer):
         labels, rois, bbox_targets, bbox_inside_weights = _sample_rois(
             all_rois, gt_boxes, fg_rois_per_image,
             rois_per_image, self._num_classes)
-
+        # if cfg.TRAIN.AMBIGUOUS_CLS:
+        #     labels, rois, bbox_targets, bbox_inside_weights = _ambiguous_cls_sample_rois(
+        #         all_rois, gt_boxes, fg_rois_per_image,
+        #         rois_per_image, self._num_classes)
+        # else:
+        #     labels, rois, bbox_targets, bbox_inside_weights = _sample_rois(
+        #         all_rois, gt_boxes, fg_rois_per_image,
+        #         rois_per_image, self._num_classes)
+        
         if DEBUG:
             print 'num fg: {}'.format((labels > 0).sum())
             print 'num bg: {}'.format((labels == 0).sum())
