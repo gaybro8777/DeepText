@@ -29,7 +29,7 @@ If our codes are useful for your work, please cite our paper:
     git clone --recursive https://github.com/zhongzhuoyao/DeepText.git
     ```
 
-2. We'll call the directory that you cloned Faster R-CNN into `DeepText_ROOT`. Build the Cython modules
+2. We'll call the directory that you cloned DeepText into `DeepText_ROOT`. Build the Cython modules
     ```Shell
     cd $DeepText_ROOT/lib
     make
@@ -47,7 +47,7 @@ If our codes are useful for your work, please cite our paper:
     make -j8 && make pycaffe
     ```
 
-4. Download DeepText text detection model from [one drive](https://1drv.ms/u/s!AjIwvtyYt40aadToKyWv_-wv64M), and then populate it into directory `models`. The model's name should be `vgg16_DeepText_trained_model.caffemodel`.
+4. Download DeepText text detection model from [one drive](https://1drv.ms/u/s!AjIwvtyYt40aadToKyWv_-wv64M), and then populate it into directory `models/text_detection/`. The model's name should be `vgg16_DeepText_trained_model.caffemodel`.
 
 ### How to run the demo
 
