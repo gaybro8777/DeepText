@@ -9,7 +9,7 @@ You can refer to [py-faster-rcnn README.md](https://github.com/rbgirshick/py-fas
 
 ### Desclaimer
 
-Please note that this repository is the demo codes (with our trained model) for DeepText system, which doesn't contain iterative regression module and linking segments and any training codes.
+Please note that this repository is the demo codes (with our trained model) for DeepText system, which doesn't contain iterative regression module and linking segments as well as any training codes.
 
 ### Citing DeepText
 
