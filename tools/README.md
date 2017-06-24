@@ -1,1 +1,1 @@
-Tools for training, testing, and compressing Fast R-CNN networks.
+demo_DeepText.py for testing DeepText system.
