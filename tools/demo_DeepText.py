@@ -102,6 +102,10 @@ def demo_textdetection(net, image_name, cls):
     keep = np.where(nms_dets[:, -1] >= CONF_THRESH)[0]
     nms_dets = nms_dets[keep, :]
 
+    isExist = os.path.exists(text_detection_results_dir)
+    if not isExist:
+        os.makedirs(text_detection_results_dir)
+        
     detection_result= text_detection_results_dir+image_name.split('.', -1)[0]+'.txt'
 
     if nms_dets.shape[0] == 0:
