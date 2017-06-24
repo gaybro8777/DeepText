@@ -47,38 +47,17 @@ If our codes are useful for your work, please cite our paper:
     make -j8 && make pycaffe
     ```
 
-4. Download DeepText text detection model from [one drive](https://1drv.ms/u/s!AjIwvtyYt40aadToKyWv_-wv64M), and the populate it into directory `models`. The model's name should be `vgg16_DeepText_trained_model.caffemodel`.
+4. Download DeepText text detection model from [one drive](https://1drv.ms/u/s!AjIwvtyYt40aadToKyWv_-wv64M), and then populate it into directory `models`. The model's name should be `vgg16_DeepText_trained_model.caffemodel`.
 
 ### How to run the demo
 
-1. Download PASCAL VOC 2007 and 2012
--- Follow the instructions in [py-faster-rcnn README.md](https://github.com/rbgirshick/py-faster-rcnn#beyond-the-demo-installation-for-training-and-testing-models)
+1. You can download ICDAR-2013 benchmark or any text images and then populate them into directory `demo_text_images`.
 
-2. PVANet on PASCAL VOC 2007
-    ```Shell
-    cd $FRCN_ROOT
-    ./tools/test_net.py --net models/pvanet/pva9.1/PVA9.1_ImgNet_COCO_VOC0712.caffemodel --def models/pvanet/pva9.1/faster_rcnn_train_test_21cls.pt --cfg models/pvanet/cfgs/submit_1019.yml --gpu 0
-    ```
-### Demo
-
-*After successfully completing [basic installation](#installation-sufficient-for-the-demo)*, you'll be ready to run the demo.
-
-To run the demo
-```Shell
-cd $FRCN_ROOT
-./tools/demo.py
-```
-The demo performs detection using a VGG16 network trained for detection on PASCAL VOC 2007.
-
-3. PVANet (compressed)
-    ```Shell
-    cd $FRCN_ROOT
-    ./tools/test_net.py --net models/pvanet/pva9.1/PVA9.1_ImgNet_COCO_VOC0712plus_compressed.caffemodel --def models/pvanet/pva9.1/faster_rcnn_train_test_ft_rcnn_only_plus_comp.pt --cfg models/pvanet/cfgs/submit_1019.yml --gpu 0
-    ```
+2. Run `python tools/demo_DeepText.py' under GPU mode or `python tools/demo_DeepText.py --cpu` to run it under CPU mode.
 
 ### Expected results
 
-#### Recall, Precision and F-measure on ICDAR-2013 benchmark.
+#### Recall, Precision and F-measure on the ICDAR-2013 benchmark.
 
 | Recall (%)     | Precision (%) | F-measure (%) |
 | --------- | ------- | ------- |
