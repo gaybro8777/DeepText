@@ -82,4 +82,4 @@ The demo performs detection using a VGG16 network trained for detection on PASCA
 
 | Recall (%)     | Precision (%) | F-measure (%) |
 | --------- | ------- | ------- |
-| *82.17*) | *87.13* | *84.58* |
+| 82.17 | 87.13 | 84.58 |
