@@ -3,7 +3,7 @@
 by Zhuoyao Zhong, Lianwen Jin, Shuangping Huang, South China University of Technology (SCUT), Published in ICASSP 2017. 
 
 ### Introduction
-This repository is a fork from [py-faster-rcnn](https://github.com/rbgirshick/py-faster-rcnn), and our proposed DeepText is based on the elegant framework of Faster R-CNN. 
+This repository is a fork from [py-faster-rcnn](https://github.com/rbgirshick/py-faster-rcnn), and our proposed DeepText system for scene textdetection is based on the elegant framework of Faster R-CNN. 
 
 You can refer to [py-faster-rcnn README.md](https://github.com/rbgirshick/py-faster-rcnn/blob/master/README.md) and [faster-rcnn README.md](https://github.com/ShaoqingRen/faster_rcnn/blob/master/README.md) for more information.
 
@@ -23,21 +23,21 @@ If our codes are useful for your work, please cite our paper:
 }
 ```
 ### Installation
-1. Clone the Faster R-CNN repository
+1. Clone the DeepText repository
     ```Shell
     # Make sure to clone with --recursive
-    git clone --recursive https://github.com/sanghoon/pva-faster-rcnn.git
+    git clone --recursive https://github.com/zhongzhuoyao/DeepText.git
     ```
 
-2. We'll call the directory that you cloned Faster R-CNN into `FRCN_ROOT`. Build the Cython modules
+2. We'll call the directory that you cloned Faster R-CNN into `DeepText_ROOT`. Build the Cython modules
     ```Shell
-    cd $FRCN_ROOT/lib
+    cd $DeepText_ROOT/lib
     make
     ```
 
 3. Build Caffe and pycaffe
     ```Shell
-    cd $FRCN_ROOT/caffe-fast-rcnn
+    cd $DeepText_ROOT/caffe-fast-rcnn
     # Now follow the Caffe installation instructions here:
     #   http://caffe.berkeleyvision.org/installation.html
     # For your Makefile.config:
@@ -52,34 +52,6 @@ If our codes are useful for your work, please cite our paper:
     cd $FRCN_ROOT
     ./models/pvanet/download_voc2007.sh
     ```
-
-5. Download PVANet detection model for VOC2012 (published model)
-    ```Shell
-    cd $FRCN_ROOT
-    ./models/pvanet/download_voc_best.sh
-    ```    
-    
-6. (Optional) Download all available models (including pre-trained and compressed models)
-    ```Shell
-    cd $FRCN_ROOT
-    ./models/pvanet/download_all_models.sh
-    ```
-
-7. (Optional) Download ILSVRC2012 (ImageNet) classification model
-    ```Shell
-    cd $FRCN_ROOT
-    ./models/pvanet/download_imagenet_model.sh
-    ```
-
-8. (Optional) If the scripts don't work, please download the models from ...
-
-    |  Model | Google Drive |
-    | ------ | ---- |
-    | PVANet for VOC2007 | [link](https://drive.google.com/open?id=0Bw_6VpHzQoMVRGZOSEctOEVMLXc) |
-    | PVANet for VOC2012 | [link](https://drive.google.com/open?id=0Bw_6VpHzQoMVa3M0Zm5zNnEtQUE) |
-    | PVANet for VOC2012 (compressed) | [link](https://drive.google.com/open?id=0Bw_6VpHzQoMVZU1BdEJDZG5MVXM) |
-    | PVANet for ILSVRC2012 (ImageNet) | [link](https://drive.google.com/open?id=0Bw_6VpHzQoMVTjctVVhjMXo1X3c) |
-    | PVANet pre-trained | [link](https://drive.google.com/open?id=0Bw_6VpHzQoMVak5FVFBWU0Uyb3M) |
 
 ### How to run the demo
 
