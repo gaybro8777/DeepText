@@ -17,7 +17,6 @@ import _init_paths
 from fast_rcnn.config import cfg
 from fast_rcnn.test import im_detect
 from fast_rcnn.nms_wrapper import nms
-from nms.cpu_soft_nms import cpu_soft_nms
 from utils.timer import Timer
 import matplotlib.pyplot as plt
 import numpy as np
